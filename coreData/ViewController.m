@@ -29,7 +29,7 @@
     NSEntityDescription * enty = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:self.appdelegate.managedObjectContext];
     
     Person * p = [[Person alloc] initWithEntity:enty insertIntoManagedObjectContext:self.appdelegate.managedObjectContext];
-    
+    NSLog(@"x");
     p.name = @"zhangsan";
     p.birth = @1;
     self.currentPerson = p;
